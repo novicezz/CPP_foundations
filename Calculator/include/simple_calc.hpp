@@ -1,0 +1,8 @@
+#ifndef SIMPLE_CALC_HPP
+#define SIMPLE_CALC_HPP
+// IF MACRO IS NOT DEFINED: LITERALLY_ANY_NAME
+// ADD THIS BLOCK
+
+int simple_calc();
+
+#endif

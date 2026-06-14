@@ -1,0 +1,35 @@
+{
+  "version": 3,
+  "configurePresets": [
+    {
+      "name": "base-ninja",
+      "generator": "Ninja",
+      "displayName": "Basic Ninja build",
+      "binaryDir": "${sourceDir}/build",
+      "cacheVariables": {        
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+      },
+      "hidden": true
+    },
+    {
+      "name": "default",
+      "inherits": "base-ninja",
+      "displayName": "Ninja Release Build",
+      "description": "Optimized release build",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release"
+      },
+      "hidden": false
+    },
+    {
+      "name": "debug",
+      "inherits": "base-ninja",
+      "displayName": "Debug Build",
+      "description": "Build with debug information",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug"
+      },
+      "hidden": false
+    }
+  ]
+}
