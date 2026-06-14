@@ -13,6 +13,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 set(SRCS
     main
+    user_input
 )
 list(TRANSFORM SRCS PREPEND "src/")
 list(TRANSFORM SRCS APPEND ".cpp")
